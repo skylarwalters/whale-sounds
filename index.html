@@ -114,8 +114,7 @@
         <button id="startBtn">Start Camera</button>
       </div>
       <div id="status">
-        Bring your face into the frame and open your mouth.<br />
-        Each mouth opening will trigger a whale call.
+        Read.<br />
       </div>
     </div>
 
@@ -329,7 +328,7 @@
         video.onloadedmetadata = () => {
           video.play();
           statusEl.textContent =
-            'Camera running. Open your mouth to call the whale.';
+            'Camera running.';
           requestAnimationFrame(onPlay);
         };
       } catch (err) {
